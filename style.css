@@ -133,36 +133,39 @@ body {
 }
 
 .about-content {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 3rem;
+    padding: 2rem;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     border: 2px solid var(--primary-color);
 }
 
 .about-text {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .about-text p {
     font-size: 1.1rem;
     line-height: 1.8;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: var(--dark-color);
-    padding: 0 1rem;
+    padding: 0 0.5rem;
 }
 
 .skills {
-    margin-top: 3rem;
-    padding-top: 2rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
     border-top: 2px dashed var(--primary-color);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skills h3 {
     color: var(--dark-color);
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
     position: relative;
 }
 
@@ -170,42 +173,43 @@ body {
 .skills h3::after {
     content: '🌿';
     position: absolute;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .skills h3::before {
-    left: -50px;
+    left: -30px;
 }
 
 .skills h3::after {
-    right: -50px;
+    right: -30px;
 }
 
 .skills ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    gap: 1rem;
+    gap: 0.8rem;
     justify-content: center;
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 350px;
+    padding: 0 1rem;
 }
 
 .skills li {
     background: var(--secondary-color);
     color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
     border: 2px solid var(--dark-color);
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     transition: all 0.3s ease;
 }
 
 .skills li:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(34, 139, 34, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(34, 139, 34, 0.2);
 }
 
 /* Projects Section */
@@ -310,27 +314,31 @@ body {
 /* Contact Section */
 .contact {
     padding: 5rem 2rem;
-    background: var(--yellow-gradient);
+    background: var(--green-gradient);
     font-family: 'Times New Roman', Times, serif;
 }
 
 .contact h2 {
     text-align: center;
     margin-bottom: 3rem;
-    color: var(--dark-color);
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
+}
+
+.contact h2 span {
+    text-shadow: none;
 }
 
 .contact-content {
     max-width: 600px;
     margin: 0 auto;
-    background: rgba(144, 238, 144, 0.3);
+    background: rgba(144, 238, 144, 0.4);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(50, 205, 50, 0.2);
-    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 20px rgba(34, 139, 34, 0.3);
+    border: 2px solid var(--dark-color);
 }
 
 form {
@@ -383,17 +391,17 @@ button:hover {
     gap: 2rem;
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 2px solid var(--secondary-color);
+    border-top: 2px solid var(--dark-color);
 }
 
 .social-links a {
-    color: var(--dark-color);
+    color: white;
     font-size: 1.8rem;
     transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-    color: var(--primary-color);
+    color: var(--light-color);
     transform: translateY(-3px);
 }
 
@@ -533,5 +541,5 @@ button:hover {
 
 ::placeholder {
     font-family: 'Times New Roman', Times, serif;
-    color: #666;
+    color: #2E7D32;
 }
